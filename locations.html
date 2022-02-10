@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Scoot</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <nav class="navBar">
+            <a href="index.html">
+                <h1 class="title">scoot</h1>
+            </a>
+            <!--nav menu will go here-->
+            <div id="links">
+                <section class="extraLinks">
+                    <a href="about.html" class="headerLinks">About</a>
+                    <a href="locations.html" class="headerLinks">Location</a>
+                    <a href="careers.html" class="headerLinks">Careers</a>
+                </section>
+                <section class="getScootinButton">
+                    <button class="scootinButton"><a href="#footer">Get Scootin</a></button>
+                </section>
+            </div>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" id="navMenuIcon"></i>
+            </a>
+
+        </nav>
+        <div class="div1Locations">
+            <h1 class="heading">Locations</h1>
+            <section class="headingImgContainer">
+                <img class="headingCircles" src="assets/patterns/white-circles.svg" alt="circles">
+            </section>
+        </div>
+        <div class="mapLocations">
+            <div class="worldMap"></div>
+            <section class="locationSection location1">
+                <h3 class="locationName arrow_box ">New York</h3>
+            </section>
+            <section class="locationSection location2">
+                <h3 class="locationName arrow_box">London</h3>
+            </section>
+            <section class="locationSection location3">
+                <h3 class="locationName arrow_box">Jakarta</h3>
+            </section>
+            <section class="locationSection location4">
+                <h3 class="locationName arrow_box">Yokohama</h3>
+            </section>
+        </div>
+        <div class="noCity">
+            <section class="noCitySection">
+                <h3 class="moreInfoTitle noCityTitle">Your City Not Listed?</h3>
+                <p class="moreInfoDescription noCityDes">If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.</p>
+                <button class="learnButton">Message Us</button>
+            </section>
+        </div>
+
+
+    </div>
+    <footer class="footerLocations" id="footer">
+        <section class="topFooter">
+            <section class="signApps">
+                <section>
+                    <h3>Sign up and Scoot off today</h3>
+                </section>
+                <section class="appButtons">
+                    <button class="appStore"></button>
+                    <button class="googlePlay"></button>
+                </section>
+            </section>
+            <section class="circleContainer">
+                <img src="assets/patterns/semi-circles.svg">
+            </section>
+        </section>
+        <section class="bottomFooter">
+            <h1>scoot</h1>
+            <section class="bottomLinks">
+                <a href="about.html">About</a>
+                <a href="locations.html">Location</a>
+                <a href="careers.html">Careers</a>
+            </section>
+            <section class="smIcons">
+                <img src="assets/icons/facebook.svg" alt="facebook logo">
+                <img src="assets/icons/twitter.svg" alt="twitter logo">
+                <img src="assets/icons/instagram.svg" alt="instagram logo">
+            </section>
+        </section>
+
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+
+</html>
