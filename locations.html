@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="mainDiv">
+    <main class="mainDiv">
         <nav class="navBar">
             <a href="index.html">
                 <h1 class="title">scoot</h1>
@@ -28,16 +28,16 @@
                     <a href="careers.html" class="headerLinks">Careers</a>
                 </section>
                 <section class="getScootinButton">
-                    <button class="scootinButton"><a href="#footer">Get Scootin</a></button>
+                    <button class="scootinButton">Get Scootin</button>
                 </section>
             </div>
-            <a href="javascript:void(0);" class="icon">
-                <i class="fa fa-bars" id="navMenuIcon"></i>
-            </a>
+            <button class="icon">
+                    <img id="buttonImg" src="assets/icons/hamburger.svg">
+            </button>
 
         </nav>
         <div class="div1Locations">
-            <h1 class="heading">Locations</h1>
+            <h2 class="heading">Locations</h2>
             <section class="headingImgContainer">
                 <img class="headingCircles" src="assets/patterns/white-circles.svg" alt="circles">
             </section>
@@ -66,38 +66,39 @@
         </div>
 
 
-    </div>
-    <footer class="footerLocations" id="footer">
-        <section class="topFooter">
-            <section class="signApps">
-                <section>
-                    <h3>Sign up and Scoot off today</h3>
+        </div>
+        <footer class="footerLocations" id="footer">
+            <section class="topFooter">
+                <section class="signApps">
+                    <section>
+                        <h3>Sign up and Scoot off today</h3>
+                    </section>
+                    <section class="appButtons">
+                        <button class="appStore"></button>
+                        <button class="googlePlay"></button>
+                    </section>
                 </section>
-                <section class="appButtons">
-                    <button class="appStore"></button>
-                    <button class="googlePlay"></button>
+                <section class="circleContainer">
+                    <img src="assets/patterns/semi-circles.svg">
                 </section>
             </section>
-            <section class="circleContainer">
-                <img src="assets/patterns/semi-circles.svg">
+            <section class="bottomFooter">
+                <h1>scoot</h1>
+                <section class="bottomLinks">
+                    <a href="about.html">About</a>
+                    <a href="locations.html">Location</a>
+                    <a href="careers.html">Careers</a>
+                </section>
+                <section class="smIcons">
+                    <img src="assets/icons/facebook.svg" alt="facebook logo">
+                    <img src="assets/icons/twitter.svg" alt="twitter logo">
+                    <img src="assets/icons/instagram.svg" alt="instagram logo">
+                </section>
             </section>
-        </section>
-        <section class="bottomFooter">
-            <h1>scoot</h1>
-            <section class="bottomLinks">
-                <a href="about.html">About</a>
-                <a href="locations.html">Location</a>
-                <a href="careers.html">Careers</a>
-            </section>
-            <section class="smIcons">
-                <img src="assets/icons/facebook.svg" alt="facebook logo">
-                <img src="assets/icons/twitter.svg" alt="twitter logo">
-                <img src="assets/icons/instagram.svg" alt="instagram logo">
-            </section>
-        </section>
 
-    </footer>
-    <script src="javascript.js"></script>
+        </footer>
+        <script src="javascript.js"></script>
+    </main>
 </body>
 
 

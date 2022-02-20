@@ -1,26 +1,47 @@
 var hamButton = document.getElementsByClassName("icon")[0];
-var icon = document.getElementById("navMenuIcon");
-var main = document.getElementsByClassName("mainDiv")[0];
+var scootButton = document.getElementsByClassName("scootinButton")[0];
+var scootButton2 = document.getElementsByClassName("scootinButton")[1];
+var learnAboutButton = document.getElementsByClassName("learnButton")[0];
+var learnAboutButton2 = document.getElementsByClassName("learnButton")[2];
+var learnLocationButton = document.getElementsByClassName("learnButton")[1];
 var x = document.getElementById("links");
-var mainWidth = main.offsetWidth;
 
+//code below this is for hamburger navigation 
 hamButton.addEventListener("click", () => {
+    var icon = document.getElementById("buttonImg");
     var behind = document.getElementsByClassName("topSection")[0];
     if (x.style.display === "block") {
         x.style.display = "none";
-        icon.classList.add("fa-bars");
-        icon.classList.remove("fa-times");
+        icon.src = "assets/icons/hamburger.svg";
         behind.style.opacity = "1";
+
     } else {
         x.style.display = "block";
+        icon.src = "assets/icons/close.svg";
         behind.style.opacity = ".75";
-        icon.classList.add("fa-times");
-        icon.classList.remove("fa-bars");
+
     }
 
 });
 
+//code below this is for when button is pressed it takes user to different parts of the page
+scootButton.addEventListener("click", () => {
+    location.href = '#footer';
+});
+scootButton2.addEventListener("click", () => {
+    location.href = '#footer';
+});
+learnAboutButton.addEventListener("click", () => {
+    location.href = 'about.html';
+});
+learnAboutButton2.addEventListener("click", () => {
+    location.href = 'about.html';
+});
+learnLocationButton.addEventListener("click", () => {
+    location.href = 'locations.html';
+});
 
+//code below this is for FAQ section with arrow is pushed every screen has different box width
 var faqButton = document.getElementsByClassName("faqButton")[0];
 var faqButton2 = document.getElementsByClassName("faqButton")[1];
 var faqButton3 = document.getElementsByClassName("faqButton")[2];
@@ -53,7 +74,7 @@ function hideShow(index) {
     if (ans.style.display === "block") {
         ans.style.display = "none";
         section.style.height = "112px"
-            //https://css-tricks.com/snippets/css/flip-an-image/
+        //https://css-tricks.com/snippets/css/flip-an-image/
         buttonImg.style.transform = "scaleY(1)"
 
     } else {

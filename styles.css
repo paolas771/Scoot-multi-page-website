@@ -54,13 +54,15 @@ html {
     margin-left: 22px;
 }
 
-.navBar a.icon {
+.icon {
     padding: 0;
     display: block;
     position: absolute;
     top: 26px;
     left: 32px;
     color: #fcb72b;
+    border: none;
+    background: white;
 }
 
 .getScootinButton {
@@ -77,12 +79,6 @@ html {
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     font-size: 15px;
-}
-
-.scootinButton a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 35px;
 }
 
 .topSection {
@@ -231,8 +227,8 @@ html {
 
 .arrowContainer {
     width: 344px;
-    overflow: hidden;
     margin-top: -150px;
+    overflow: hidden;
 }
 
 .moreInfoTitle {
@@ -325,9 +321,13 @@ html {
     border: none;
     margin-left: 12px;
 }
-
+/*margin-left: -600px;
+    margin-top: -63px;*/
 .circleContainer {
-    width: 375px;
+    width: 975px;
+    overflow: hidden;
+}
+.circleContainer{
     margin-left: -600px;
     margin-top: -63px;
 }
@@ -719,7 +719,7 @@ html {
         padding: 0;
     }
     .navBar #links {
-        display: flex;
+        display: flex !important;
         align-items: center;
         background: none;
         width: 249px;
@@ -727,7 +727,7 @@ html {
         left: 205px;
         top: 40px;
     }
-    .navBar a.icon {
+    .icon {
         display: none;
     }
     .title {
@@ -743,6 +743,7 @@ html {
     .topSection {
         width: 769px;
         top: 96px;
+        opacity: 1 !important;
         background: url(assets/images/home-hero-tablet.jpg);
     }
     .topSection h1 {
@@ -863,7 +864,7 @@ html {
         margin-left: auto;
     }
     .circleContainer {
-        width: 768px;
+        width: 968px;
         margin-left: -200px;
         margin-top: -83px;
     }
@@ -1185,7 +1186,6 @@ html {
         height: 330px;
         display: flex;
         justify-content: space-around;
-        margin-left: 15px;
     }
     .howToSection {
         display: flex;
@@ -1257,10 +1257,10 @@ html {
         float: left;
     }
     .arrowContainer {
-        width: 1000px;
+        width: 745px;
         position: absolute;
         top: 580px;
-        left: 630px;
+        left: 758px;
     }
     .arrowContainer2 {
         top: 680px;
@@ -1292,8 +1292,10 @@ html {
         text-align: left;
     }
     .circleContainer {
+        width: 980px;
         margin-left: 460px;
         margin-top: -160px;
+        overflow-x: hidden;
     }
     .bottomFooter h1 {
         margin-left: 200px;
