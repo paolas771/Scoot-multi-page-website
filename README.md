@@ -48,7 +48,8 @@ Users should be able to:
 
 - The purpose of this project was to keep practicing mobile-first design and to practice multi-page website.
 - I learned how to create arrows out of boxes using css.
-- I learned how to flip an image upside down. 
+- I learned how to flip an image upside down using transform. 
+- I learned about css keyword !important.
 
 ### Continued development
 
